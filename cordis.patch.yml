@@ -1,0 +1,7 @@
+# dsh-chat-font-zoom-ad profile patch layer.
+# The Host half is a no-op row; the browser half is picked up by
+# dsh-client-modules through the package's dsh.client declaration and applies
+# the A− / A+ control through the Client theme service.
+- insert:
+    - id: chat-font-zoom
+      name: 'dsh-chat-font-zoom-ad'

@@ -1,0 +1,55 @@
+{
+  "name": "dsh-chat-font-zoom-ad",
+  "version": "1.0.0",
+  "description": "Chat font zoom for DeepSeek Harness: A− / A+ controls in the composer toolbar that change the conversation text size (10–22 px).",
+  "license": "MIT",
+  "type": "module",
+  "author": "Andy",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "font-size",
+    "font-zoom",
+    "chat",
+    "composer",
+    "ui",
+    "聊天字体",
+    "字体缩放"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmq6931/dsh-chat-font-zoom-ad.git"
+  },
+  "homepage": "https://github.com/zmq6931/dsh-chat-font-zoom-ad#readme",
+  "bugs": {
+    "url": "https://github.com/zmq6931/dsh-chat-font-zoom-ad/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

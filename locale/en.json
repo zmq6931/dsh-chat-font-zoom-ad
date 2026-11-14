@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chat font zoom",
+    "description": "Adds A− / A+ controls to the composer toolbar that zoom the conversation text size (10–22 px), sharing the persisted text font size from Settings → General."
+  }
+}
