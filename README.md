@@ -2,7 +2,7 @@
 
 给 DeepSeek Harness Web GUI（含桌面端）的**输入框工具栏**加一个紧凑的 **A− / 14 / A+** 控件：点一下就把**聊天正文**放大或缩小 1px（10–22 px）。
 
-> 📦 **源码 / GitHub：**[zmq6931/dsh-chat-font-zoom-ad](https://github.com/zmq6931/dsh-chat-font-zoom-ad) &nbsp;·&nbsp; MIT License
+> 📦 **npm：**[dsh-chat-font-zoom-ad](https://www.npmjs.com/package/dsh-chat-font-zoom-ad) &nbsp;·&nbsp; **GitHub：**[zmq6931/dsh-chat-font-zoom-ad](https://github.com/zmq6931/dsh-chat-font-zoom-ad) &nbsp;·&nbsp; MIT License
 
 - 与「设置 → 通用 → 字号」共用同一份持久化设置（`text` 字号角色），重启后保留。
 - 聊天正文、Markdown 标题、用户气泡和输入框草稿会一起变化；代码块仍由「代码字号」与桌面端 `Ctrl/Cmd + +/−` 控制。
@@ -11,13 +11,19 @@
 
 ## 安装
 
+npm（推荐）：
+
+```bash
+dsh plugin --profile desktop add dsh-chat-font-zoom-ad
+```
+
 本地目录（开发 / 自用）：
 
 ```bash
 dsh plugin --profile desktop add link:C:/Andy/deepseek_HARNESS/dsh-chat-font-zoom-ad
 ```
 
-或在「插件」面板里填 `link:C:/Andy/deepseek_HARNESS/dsh-chat-font-zoom-ad`。安装后刷新页面，输入框右侧（提交按钮前）出现 A− / A+ 控件即生效。
+或在「插件」面板里填 `dsh-chat-font-zoom-ad` / `link:C:/Andy/deepseek_HARNESS/dsh-chat-font-zoom-ad`。安装后刷新页面，输入框右侧（提交按钮前）出现 A− / A+ 控件即生效。
 
 ## 结构
 
